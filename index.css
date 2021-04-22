@@ -1,0 +1,138 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background: #242525;
+}
+.centeredtext{
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	/*background: yellow;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.topside{
+	width: 90%;
+	height: 60px;
+	margin: 10px auto;
+	/*background: black;*/
+}
+h2{
+	color: #A16AE8;
+}
+h3{
+	color: #A16AE8;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+.rightside,.leftside{
+	height: 100%;
+	/*background: yellow;*/
+}
+.rightside{
+	float: right;
+}
+.leftside{
+	float: left;
+}
+.icon{
+	text-align: center;
+	position: relative;
+	top: 25%;
+	font-size: 120px;
+}
+.text{
+	text-align: center;
+	font-size: 60px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-55%);
+	font-family: 'Open Sans', sans-serif;
+}
+i.fa-cog{
+	transform: rotate();
+	animation: rollin 2s linear infinite;
+	margin-right: 3px;
+}
+ul.right{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+li.right{
+	margin-right:10px;
+	top: 50%;
+	transform: translateY(-50%);
+	list-style-type: none;
+	float: right;
+}
+h3.texttop{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+@media screen and (max-height: 700px){
+	.icon{
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 100px;
+	}
+	.text{
+		font-size: 50px;
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%,-55%);
+		font-family: 'Open Sans', sans-serif;
+	}
+	i.fa-cog{
+		transform: rotate();
+		animation: rollin 2s linear infinite;
+		margin-right: 3px;
+	}
+}
+@keyframes rollin {
+	0%{
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 700px){
+	.icon{
+		position: absolute;
+		top: 25%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 100px;
+	}
+	.text{
+		font-size: 50px;
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%,-55%);
+		font-family: 'Open Sans', sans-serif;
+	}
+	i.fa-cog{
+		transform: rotate();
+		animation: rollin 2s linear infinite;
+		margin-right: 3px;
+	}
+}
+@keyframes rollin {
+	0%{
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
